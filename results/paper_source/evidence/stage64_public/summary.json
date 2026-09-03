@@ -1,0 +1,82 @@
+{
+  "stage": 64,
+  "purpose": "independent reproduction and public evidence finalization",
+  "passed": true,
+  "failures": [],
+  "datasets": {
+    "v5": {
+      "cases": 60,
+      "lightsabre_swap": 1691,
+      "independent_rollout_swap": 1843,
+      "baseline_rollout_safe_swap": 1670,
+      "selected_swap": 1641,
+      "gain_vs_lightsabre": 50,
+      "relative_gain_pct": 2.9568302779420463,
+      "swap_wins": 20,
+      "swap_ties": 40,
+      "swap_losses": 0,
+      "quality_wins": 25,
+      "quality_ties": 35,
+      "quality_losses": 0,
+      "selected_branches": {
+        "cross_layout": 23,
+        "independent_rollout": 2,
+        "lightsabre": 35
+      },
+      "semantic_passed": 60,
+      "topology_passed": 60,
+      "metric_passed": 60
+    },
+    "v6": {
+      "cases": 120,
+      "lightsabre_swap": 3176,
+      "independent_rollout_swap": 3386,
+      "baseline_rollout_safe_swap": 3119,
+      "selected_swap": 3051,
+      "gain_vs_lightsabre": 125,
+      "relative_gain_pct": 3.9357682619647356,
+      "swap_wins": 50,
+      "swap_ties": 70,
+      "swap_losses": 0,
+      "quality_wins": 58,
+      "quality_ties": 62,
+      "quality_losses": 0,
+      "selected_branches": {
+        "cross_layout": 51,
+        "independent_rollout": 7,
+        "lightsabre": 62
+      },
+      "semantic_passed": 120,
+      "topology_passed": 120,
+      "metric_passed": 120
+    }
+  },
+  "statistics": {
+    "iid_bootstrap_95_ci": [
+      -0.024346064814814817,
+      -0.01363425925925926
+    ],
+    "cluster_bootstrap_95_ci": [
+      -0.02439236111111111,
+      -0.013593749999999998
+    ],
+    "all_leave_one_level_out_gains_positive": true
+  },
+  "reproduction": {
+    "python": "Python 3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "qiskit": "2.4.2",
+    "qasm3_import": "0.6.0",
+    "v5_parallel_wall_seconds": 118.22766420000698,
+    "v6_parallel_wall_seconds": 197.1876740999287,
+    "v5_effective_parallelism": 3.1723793076512927,
+    "v6_effective_parallelism": 3.336278443380431,
+    "v5_quality_policy": "exact",
+    "v6_quality_policy": "primary"
+  },
+  "source_hashes": {
+    "uploaded_evidence_zip": "6c7f38aecea6318b3a8407a73d8f5ae67223ea8853e8f2bc3839261c9af3a85d",
+    "v5_cases": "a4716ef6445d46c5f108effc5dba12fec5e1d27ab3b23e0b62a686774c8ae79a",
+    "v6_cases": "a1466e8c6882747d8c7a5ee43f376ba803f1fff58acaff5e16a0a6608e21827f",
+    "stage61_summary": "04e4a31998416b7ac2f9b2ec88ea093e729660cf690ed6c8800499e93d0dac2f"
+  }
+}

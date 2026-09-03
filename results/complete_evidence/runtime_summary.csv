@@ -1,0 +1,3 @@
+﻿dataset,baseline,baseline_seconds,persistent_seconds,speedup,wall_reduction_pct,persistent_processes,avoided_process_restarts
+V5,Stage 57 per-case processes,212.56941330002155,78.97458059992641,2.6916181344079164,62.84762733551826,4,56
+V6,Stage 55 sequential,583.84,200.2067116999533,2.9161859512232136,65.70863392368572,4,116

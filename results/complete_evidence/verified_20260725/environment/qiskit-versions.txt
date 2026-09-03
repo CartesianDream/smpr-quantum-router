@@ -1,0 +1,2 @@
+﻿Qiskit: 2.4.2
+qiskit-qasm3-import: 0.6.0

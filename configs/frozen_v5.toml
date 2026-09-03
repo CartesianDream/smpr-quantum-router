@@ -1,0 +1,17 @@
+schema_version = 1
+name = "frozen_v5_engineering"
+dataset = "V5"
+input = "data/benchmarks_v5/final_test.json"
+input_sha256 = "050141905bd5a7f73af86f7643ce49d6383afaa65be733b85aa0f3bd018c784a"
+
+[portfolio]
+qiskit_seeds = 20
+qiskit_repeats = 1
+cross_layout_layouts = 0
+cross_layout_neighbors = 4
+proxy_decay = 0.95
+selection_mode = "legacy"
+
+[execution]
+workers = 4
+schedule = "lpt"

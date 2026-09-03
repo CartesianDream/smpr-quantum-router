@@ -1,0 +1,17 @@
+schema_version = 1
+name = "frozen_v6_blind"
+dataset = "V6"
+input = "data/benchmarks_v6/blind_test.json"
+input_sha256 = "eb839709915d106f2c253343d98fa8fd80dd7a92962eab14e27b833e9e18bb35"
+
+[portfolio]
+qiskit_seeds = 20
+qiskit_repeats = 1
+cross_layout_layouts = 0
+cross_layout_neighbors = 4
+proxy_decay = 0.95
+selection_mode = "legacy"
+
+[execution]
+workers = 4
+schedule = "lpt"

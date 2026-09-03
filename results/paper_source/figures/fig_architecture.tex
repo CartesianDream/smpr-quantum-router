@@ -1,0 +1,45 @@
+% !TeX program = xelatex
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{fontspec}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta,positioning}
+\setmainfont{NotoSerifSC-Regular.ttf}[Path=../fonts/,BoldFont=NotoSerifSC-Bold.ttf]
+\definecolor{DeepBlue}{HTML}{17365D}
+\definecolor{SoftBlue}{HTML}{EEF5FC}
+\definecolor{SoftGray}{HTML}{F4F5F7}
+\begin{document}
+\begin{tikzpicture}[
+  node distance=7mm and 12mm,
+  box/.style={
+    draw=DeepBlue,
+    rounded corners=1.2mm,
+    align=center,
+    minimum height=9mm,
+    text width=34mm,
+    fill=white
+  },
+  accent/.style={box,fill=SoftBlue,very thick},
+  audit/.style={box,fill=SoftGray,text width=44mm},
+  arrow/.style={-{Latex[length=2.2mm]},thick,draw=DeepBlue}
+]
+  \node[accent] (input) {逻辑线路与\\硬件耦合图};
+  \node[box,below left=of input] (ls) {20-seed LightSABRE\\基线与布局};
+  \node[box,below right=of input] (native) {独立展开分支\\自适应布局与 rollout};
+  \node[box,below=of ls] (layouts) {并列最优唯一布局\\及 4 个代理邻居};
+  \node[box,below=of layouts] (crosslayout) {跨布局分支\\冷启动完整路由};
+  \node[accent,below right=10mm and -1mm of crosslayout] (select)
+    {安全选择\\$\min(S,D_{\mathrm w},\text{priority})$};
+  \node[audit,below=of select] (audit)
+    {QASM/QPY 导出与三重审计\\语义等价、拓扑合法、指标一致};
+
+  \draw[arrow] (input) -- (ls);
+  \draw[arrow] (input) -- (native);
+  \draw[arrow] (ls) -- (layouts);
+  \draw[arrow] (layouts) -- (crosslayout);
+  \draw[arrow] (ls.east) -| (select.north);
+  \draw[arrow] (native.south) |- (select.east);
+  \draw[arrow] (crosslayout.east) -| (select.west);
+  \draw[arrow] (select) -- (audit);
+\end{tikzpicture}
+\end{document}

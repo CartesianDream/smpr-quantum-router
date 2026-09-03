@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "purpose": "prospectively frozen V7 external validation",
+  "row_count": 120,
+  "expected_row_count": 120,
+  "case_count": 10,
+  "repeat_count": 3,
+  "environment_count": 3,
+  "frozen_manifest_consistent": true,
+  "frozen_manifest_sha256": "90c4fb2b61206cd92cb72c11564ad252c705e3704a90ee0a8c728f702414901d",
+  "verified_repeat_hashes": 3,
+  "repeat_hash_failures": [],
+  "all_qubits_over_10": true,
+  "all_heavy_hex": true,
+  "routing_trace_passed": 120,
+  "topology_passed": 120,
+  "safe_floor_passed": 120,
+  "frontier": {
+    "0.25": {
+      "observations": 30,
+      "cases": 10,
+      "repeats": 3,
+      "smpr_total_swap": 990,
+      "lightsabre_total_swap": 1113,
+      "swap_gap": -123,
+      "relative_smpr_reduction": 0.1105121293800539,
+      "wins": 12,
+      "ties": 15,
+      "losses": 3,
+      "cluster_bootstrap_ci95_normalized_gap": [
+        -0.359054993209405,
+        0.0007236227824463121
+      ],
+      "median_smpr_wall_ms": 1719.7021000320092,
+      "median_lightsabre_elapsed_ms": 523.7290000077337,
+      "median_lightsabre_trials": 38.5,
+      "max_smpr_peak_rss_bytes": 103809024,
+      "max_lightsabre_peak_rss_bytes": 83951616
+    },
+    "0.5": {
+      "observations": 30,
+      "cases": 10,
+      "repeats": 3,
+      "smpr_total_swap": 990,
+      "lightsabre_total_swap": 1086,
+      "swap_gap": -96,
+      "relative_smpr_reduction": 0.08839779005524862,
+      "wins": 12,
+      "ties": 10,
+      "losses": 8,
+      "cluster_bootstrap_ci95_normalized_gap": [
+        -0.31977005140563247,
+        0.005950315585896615
+      ],
+      "median_smpr_wall_ms": 1719.7021000320092,
+      "median_lightsabre_elapsed_ms": 862.2324000461958,
+      "median_lightsabre_trials": 78.5,
+      "max_smpr_peak_rss_bytes": 103809024,
+      "max_lightsabre_peak_rss_bytes": 83951616
+    },
+    "1.0": {
+      "observations": 30,
+      "cases": 10,
+      "repeats": 3,
+      "smpr_total_swap": 990,
+      "lightsabre_total_swap": 1068,
+      "swap_gap": -78,
+      "relative_smpr_reduction": 0.07303370786516854,
+      "wins": 12,
+      "ties": 9,
+      "losses": 9,
+      "cluster_bootstrap_ci95_normalized_gap": [
+        -0.3096896491905459,
+        0.01522700746965452
+      ],
+      "median_smpr_wall_ms": 1719.7021000320092,
+      "median_lightsabre_elapsed_ms": 1723.6491999938153,
+      "median_lightsabre_trials": 159.5,
+      "max_smpr_peak_rss_bytes": 103809024,
+      "max_lightsabre_peak_rss_bytes": 83951616
+    },
+    "2.0": {
+      "observations": 30,
+      "cases": 10,
+      "repeats": 3,
+      "smpr_total_swap": 990,
+      "lightsabre_total_swap": 1044,
+      "swap_gap": -54,
+      "relative_smpr_reduction": 0.05172413793103448,
+      "wins": 12,
+      "ties": 6,
+      "losses": 12,
+      "cluster_bootstrap_ci95_normalized_gap": [
+        -0.24153679653679655,
+        0.02373302532395071
+      ],
+      "median_smpr_wall_ms": 1719.7021000320092,
+      "median_lightsabre_elapsed_ms": 3444.4460500380956,
+      "median_lightsabre_trials": 321.5,
+      "max_smpr_peak_rss_bytes": 103809024,
+      "max_lightsabre_peak_rss_bytes": 83951616
+    }
+  },
+  "passed": true
+}

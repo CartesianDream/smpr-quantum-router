@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use SMPR, cite the accompanying paper and this software."
+title: "SMPR: Safe Multi-Layout Portfolio Router"
+type: software
+version: "1.0.0-rc3"
+date-released: "2026-07-25"
+authors:
+  - name: "Anonymous authors"
+repository-code: "REPLACE_WITH_PUBLIC_REPOSITORY_URL"
+license: "LicenseRef-Proprietary"
+preferred-citation:
+  type: article
+  title: "SMPR：具有逐实例质量下界的安全多布局组合量子比特路由"
+  authors:
+    - name: "Anonymous authors"
+  year: 2026

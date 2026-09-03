@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smpr-router"
+version = "1.0.0rc3"
+description = "Safe Multi-Layout Portfolio Router for constrained quantum hardware"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE-REVIEW-REQUIRED.txt" }
+authors = [{ name = "SMPR authors" }]
+dependencies = [
+  "qiskit==2.4.2",
+  "qiskit-qasm3-import==0.6.0",
+  "psutil==7.0.0",
+  "tomli==2.2.1; python_version < '3.11'",
+]
+
+[project.scripts]
+smpr-router = "smpr_router.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

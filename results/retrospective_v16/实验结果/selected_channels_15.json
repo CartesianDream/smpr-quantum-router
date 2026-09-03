@@ -1,0 +1,319 @@
+{
+ "channels": [
+  {
+   "name": "v13_ordered_rollout",
+   "config": {
+    "name": "v13_ordered_rollout",
+    "beta_unlock": 2.0,
+    "undo_weight": 0.0,
+    "potential_mode": "ordered_potential",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "one_step",
+    "beam_width_1": 8,
+    "beam_width_2": 8
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.5
+   },
+   "rollout": true
+  },
+  {
+   "name": "v13_t2_2x2",
+   "config": {
+    "name": "v13_t2_2x2",
+    "beta_unlock": 2.0,
+    "undo_weight": 0.0,
+    "potential_mode": "front_sum",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 2,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.5
+   },
+   "rollout": false
+  },
+  {
+   "name": "n5003",
+   "config": {
+    "name": "n5003",
+    "beta_unlock": 2.0,
+    "undo_weight": 2.5,
+    "potential_mode": "front_sum",
+    "candidate_mode": "current",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 3,
+    "beam_width_2": 3
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.7,
+    "alpha": 0.5,
+    "ordered_decay": 0.3
+   },
+   "rollout": false
+  },
+  {
+   "name": "n5096",
+   "config": {
+    "name": "n5096",
+    "beta_unlock": 0.5,
+    "undo_weight": 1.0,
+    "potential_mode": "ordered_potential",
+    "candidate_mode": "current",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 2,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 3,
+    "w_future": 0.7,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.7
+   },
+   "rollout": false
+  },
+  {
+   "name": "n5029",
+   "config": {
+    "name": "n5029",
+    "beta_unlock": 1.0,
+    "undo_weight": 1.0,
+    "potential_mode": "front_sum",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 2,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 3,
+    "w_future": 0.7,
+    "gamma": 0.5,
+    "alpha": 1.0,
+    "ordered_decay": 0.3
+   },
+   "rollout": false
+  },
+  {
+   "name": "p1139",
+   "config": {
+    "name": "p1139",
+    "beta_unlock": 2.0,
+    "undo_weight": 2.5,
+    "potential_mode": "front_sum",
+    "candidate_mode": "current",
+    "search_mode": "one_step",
+    "beam_width_1": 8,
+    "beam_width_2": 8
+   },
+   "globals": {
+    "theta": 8,
+    "w_future": 0.3,
+    "gamma": 0.7,
+    "alpha": 0.5,
+    "ordered_decay": 0.5
+   },
+   "rollout": true
+  },
+  {
+   "name": "n5005",
+   "config": {
+    "name": "n5005",
+    "beta_unlock": 4.0,
+    "undo_weight": 0.5,
+    "potential_mode": "front_sum",
+    "candidate_mode": "current",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 3,
+    "beam_width_2": 3
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.7,
+    "alpha": 0.5,
+    "ordered_decay": 0.3
+   },
+   "rollout": false
+  },
+  {
+   "name": "n5102",
+   "config": {
+    "name": "n5102",
+    "beta_unlock": 0.5,
+    "undo_weight": 1.0,
+    "potential_mode": "ordered_potential",
+    "candidate_mode": "current",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 3,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 3,
+    "w_future": 0.7,
+    "gamma": 0.5,
+    "alpha": 0.0,
+    "ordered_decay": 0.7
+   },
+   "rollout": false
+  },
+  {
+   "name": "p1061",
+   "config": {
+    "name": "p1061",
+    "beta_unlock": 1.0,
+    "undo_weight": 1.0,
+    "potential_mode": "front_sum",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "one_step",
+    "beam_width_1": 8,
+    "beam_width_2": 8
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.3,
+    "gamma": 0.3,
+    "alpha": 1.0,
+    "ordered_decay": 0.3
+   },
+   "rollout": true
+  },
+  {
+   "name": "p007",
+   "config": {
+    "name": "p007",
+    "beta_unlock": 4.0,
+    "undo_weight": 0.0,
+    "potential_mode": "front_sum",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 2,
+    "beam_width_2": 4
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.5
+   },
+   "rollout": false
+  },
+  {
+   "name": "p1002",
+   "config": {
+    "name": "p1002",
+    "beta_unlock": 0.5,
+    "undo_weight": 1.0,
+    "potential_mode": "ordered_potential",
+    "candidate_mode": "current",
+    "search_mode": "one_step",
+    "beam_width_1": 8,
+    "beam_width_2": 8
+   },
+   "globals": {
+    "theta": 8,
+    "w_future": 0.3,
+    "gamma": 0.5,
+    "alpha": 0.0,
+    "ordered_decay": 0.7
+   },
+   "rollout": true
+  },
+  {
+   "name": "p1195",
+   "config": {
+    "name": "p1195",
+    "beta_unlock": 0.5,
+    "undo_weight": 1.0,
+    "potential_mode": "v1",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 4,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.3,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.3
+   },
+   "rollout": false
+  },
+  {
+   "name": "v16_p007",
+   "config": {
+    "name": "v16_p007",
+    "beta_unlock": 1.0,
+    "undo_weight": 0.0,
+    "potential_mode": "ordered_sq",
+    "candidate_mode": "multigeodesic",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 2,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.3
+   },
+   "rollout": false
+  },
+  {
+   "name": "v16_p017",
+   "config": {
+    "name": "v16_p017",
+    "beta_unlock": 0.25,
+    "undo_weight": 0.0,
+    "potential_mode": "ordered_lin",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 3,
+    "beam_width_2": 2
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.5
+   },
+   "rollout": false
+  },
+  {
+   "name": "v16_p035",
+   "config": {
+    "name": "v16_p035",
+    "beta_unlock": 1.0,
+    "undo_weight": 0.0,
+    "potential_mode": "ordered_sq",
+    "candidate_mode": "ordered_frontier",
+    "search_mode": "terminal_two_step",
+    "beam_width_1": 4,
+    "beam_width_2": 3
+   },
+   "globals": {
+    "theta": 5,
+    "w_future": 0.5,
+    "gamma": 0.5,
+    "alpha": 0.5,
+    "ordered_decay": 0.7
+   },
+   "rollout": false
+  }
+ ]
+}

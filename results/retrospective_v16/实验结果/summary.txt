@@ -1,0 +1,29 @@
+===== V15 × 扩展公共电路桥梁 =====
+cases: 17（V7 10 条之外的扩展），12 通道，workers=12
+
+--- 逐 case ---
+  v7_qasmbench_qft_n18_heavy_hex_d3: ls=134 v14_on_lsbest=136 (iso ✗) v14_pool=134
+  v7_qasmbench_swap_test_n25_heavy_hex_d5: ls=38 v14_on_lsbest=38 (iso =) v14_pool=38
+  v7_qasmbench_knn_n25_heavy_hex_d5: ls=38 v14_on_lsbest=38 (iso =) v14_pool=38
+  v7_qasmbench_ising_n26_heavy_hex_d5: ls=14 v14_on_lsbest=14 (iso =) v14_pool=14
+  v7_qasmbench_wstate_n27_heavy_hex_d5: ls=24 v14_on_lsbest=23 (iso ✓) v14_pool=23
+  v7_qasmbench_adder_n28_heavy_hex_d5: ls=77 v14_on_lsbest=73 (iso ✓) v14_pool=73
+  v7_qasmbench_bv_n30_heavy_hex_d5: ls=19 v14_on_lsbest=19 (iso =) v14_pool=19
+  v7_qasmbench_cat_n35_heavy_hex_d5: ls=53 v14_on_lsbest=52 (iso ✓) v14_pool=47
+  v7_qasmbench_ghz_n40_heavy_hex_d5: ls=64 v14_on_lsbest=50 (iso ✓) v14_pool=50
+  v7_qasmbench_ising_n34_heavy_hex_d5: ls=20 v14_on_lsbest=21 (iso ✗) v14_pool=21
+  v7_qasmbench_knn_n31_heavy_hex_d5: ls=58 v14_on_lsbest=57 (iso ✓) v14_pool=57
+  v7_qasmbench_qugan_n39_heavy_hex_d5: ls=127 v14_on_lsbest=113 (iso ✓) v14_pool=113
+  v7_qasmbench_swap_test_n41_heavy_hex_d5: ls=87 v14_on_lsbest=84 (iso ✓) v14_pool=81
+  v7_qasmbench_wstate_n36_heavy_hex_d5: ls=48 v14_on_lsbest=48 (iso =) v14_pool=43
+  v7_qasmbench_adder_n10_heavy_hex_d3: ls=16 v14_on_lsbest=17 (iso ✗) v14_pool=17
+  v7_qasmbench_ising_n10_heavy_hex_d3: ls=0 v14_on_lsbest=0 (iso =) v14_pool=0
+  v7_qasmbench_hhl_n7_heavy_hex_d3: ls=34 v14_on_lsbest=33 (iso ✓) v14_pool=32
+
+--- 汇总（A 同布局隔离）---
+  总 SWAP: LS=851 vs V14(同布局)=816  delta=-35 (-4.1%)
+  W/T/L (isolated) = 8/6/3
+--- 汇总（A+ 布局池）---
+  总 SWAP: LS=851 vs V14(池min)=800  delta=-51 (-6.0%)
+  W/T/L (pool) = 9/6/2
+  耗时 857s

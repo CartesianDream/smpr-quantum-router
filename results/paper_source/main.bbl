@@ -1,0 +1,120 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Siraichi et~al.(2018)Siraichi, Santos, Collange, and
+  Pereira]{Siraichi2018QubitAllocation}
+Marcos~Yukio Siraichi, Vinícius Fernandes~dos Santos, Sylvain Collange, and
+  Fernando Magno~Quintão Pereira.
+\newblock Qubit allocation.
+\newblock In \emph{Proceedings of the 2018 International Symposium on Code
+  Generation and Optimization}, CGO '18, pages 113--125. ACM, 2018.
+\newblock \doi{10.1145/3168822}.
+
+\bibitem[Zulehner et~al.(2019)Zulehner, Paler, and Wille]{Zulehner2018Mapping}
+Alwin Zulehner, Alexandru Paler, and Robert Wille.
+\newblock An efficient methodology for mapping quantum circuits to the {IBM QX}
+  architectures.
+\newblock \emph{IEEE Transactions on Computer-Aided Design of Integrated
+  Circuits and Systems}, 38\penalty0 (7):\penalty0 1226--1236, 2019.
+\newblock \doi{10.1109/TCAD.2018.2846658}.
+
+\bibitem[Cowtan et~al.(2019)Cowtan, Dilkes, Duncan, Krajenbrink, Simmons, and
+  Sivarajah]{Cowtan2019Routing}
+Alexander Cowtan, Silas Dilkes, Ross Duncan, Alexandre Krajenbrink, Will
+  Simmons, and Seyon Sivarajah.
+\newblock On the qubit routing problem.
+\newblock In \emph{14th Conference on the Theory of Quantum Computation,
+  Communication and Cryptography}, volume 135 of \emph{Leibniz International
+  Proceedings in Informatics}, pages 5:1--5:32. Schloss
+  Dagstuhl--Leibniz-Zentrum fuer Informatik, 2019.
+\newblock \doi{10.4230/LIPIcs.TQC.2019.5}.
+
+\bibitem[Li et~al.(2019)Li, Ding, and Xie]{Li2019SABRE}
+Gushu Li, Yufei Ding, and Yuan Xie.
+\newblock Tackling the qubit mapping problem for {NISQ}-era quantum devices.
+\newblock In \emph{Proceedings of the Twenty-Fourth International Conference on
+  Architectural Support for Programming Languages and Operating Systems},
+  ASPLOS '19, pages 1001--1014. ACM, 2019.
+\newblock \doi{10.1145/3297858.3304023}.
+
+\bibitem[Zou et~al.(2024)Zou, Treinish, Hartman, Ivrii, and
+  Lishman]{Zou2024LightSABRE}
+Henry Zou, Matthew Treinish, Kevin Hartman, Alexander Ivrii, and Jake Lishman.
+\newblock {LightSABRE}: A lightweight and enhanced {SABRE} algorithm.
+\newblock \emph{arXiv preprint arXiv:2409.08368}, 2024.
+\newblock \doi{10.48550/arXiv.2409.08368}.
+
+\bibitem[Efron(1979)]{Efron1979Bootstrap}
+Bradley Efron.
+\newblock Bootstrap methods: Another look at the jackknife.
+\newblock \emph{The Annals of Statistics}, 7\penalty0 (1):\penalty0 1--26,
+  1979.
+\newblock \doi{10.1214/aos/1176344552}.
+
+\bibitem[Javadi-Abhari et~al.(2024)Javadi-Abhari, Treinish, Krsulich, Wood,
+  Lishman, Gacon, Martiel, Nation, Bishop, Cross, Johnson, and
+  Gambetta]{JavadiAbhari2024Qiskit}
+Ali Javadi-Abhari, Matthew Treinish, Kevin Krsulich, Christopher~J. Wood, Jake
+  Lishman, Julien Gacon, Simon Martiel, Paul~D. Nation, Lev~S. Bishop,
+  Andrew~W. Cross, Blake~R. Johnson, and Jay~M. Gambetta.
+\newblock Quantum computing with {Qiskit}.
+\newblock \emph{arXiv preprint arXiv:2405.08810}, 2024.
+\newblock \doi{10.48550/arXiv.2405.08810}.
+
+\bibitem[Luo et~al.(2025)Luo, Cao, Guo, and Hu]{Luo2025LocalSearch}
+Chuan Luo, Shenghua Cao, Shanyu Guo, and Chunming Hu.
+\newblock Towards effective local search for qubit mapping.
+\newblock \emph{IEEE Transactions on Computers}, 74\penalty0 (6):\penalty0
+  1897--1910, 2025.
+\newblock \doi{10.1109/TC.2025.3544869}.
+
+\bibitem[Zhou et~al.(2020)Zhou, Li, and Feng]{Zhou2020MCTS}
+Xiangzhen Zhou, Sanjiang Li, and Yuan Feng.
+\newblock Quantum circuit transformation based on a monte carlo tree search
+  framework.
+\newblock In \emph{Proceedings of the 39th International Conference on
+  Computer-Aided Design}, ICCAD '20. ACM, 2020.
+\newblock \doi{10.1145/3400302.3415621}.
+
+\bibitem[Herbert and Sengupta(2022)]{Herbert2022RLRouter}
+Steven Herbert and Akash Sengupta.
+\newblock Using reinforcement learning to find efficient qubit routing policies
+  for deployment in near-term quantum computers.
+\newblock \emph{ACM Transactions on Quantum Computing}, 3\penalty0 (1), 2022.
+\newblock \doi{10.1145/3520434}.
+
+\bibitem[Cross et~al.(2022)Cross, Javadi-Abhari, Alexander, de~Beaudrap,
+  Bishop, Heidel, Ryan, Sivarajah, Smolin, Gambetta, and
+  Johnson]{Cross2022OpenQASM3}
+Andrew~W. Cross, Ali Javadi-Abhari, Thomas Alexander, Niel de~Beaudrap, Lev~S.
+  Bishop, Steven Heidel, Colm~A. Ryan, Prasahnt Sivarajah, John Smolin, Jay~M.
+  Gambetta, and Blake~R. Johnson.
+\newblock {OpenQASM} 3: A broader and deeper quantum assembly language.
+\newblock \emph{ACM Transactions on Quantum Computing}, 3\penalty0
+  (3):\penalty0 12:1--12:50, 2022.
+\newblock \doi{10.1145/3505636}.
+
+\bibitem[Aaronson and Gottesman(2004)]{Aaronson2004Clifford}
+Scott Aaronson and Daniel Gottesman.
+\newblock Improved simulation of stabilizer circuits.
+\newblock \emph{Physical Review A}, 70\penalty0 (5):\penalty0 052328, 2004.
+\newblock \doi{10.1103/PhysRevA.70.052328}.
+
+\bibitem[Li et~al.(2022)Li, Stein, Krishnamoorthy, and Ang]{Li2022QASMBench}
+Ang Li, Samuel Stein, Sriram Krishnamoorthy, and James Ang.
+\newblock {QASMBench}: A low-level quantum benchmark suite for {NISQ}
+  evaluation and simulation.
+\newblock \emph{ACM Transactions on Quantum Computing}, 2022.
+\newblock \doi{10.1145/3550488}.
+
+\bibitem[{IBM Quantum}(2021)]{IBMHeavyHex}
+{IBM Quantum}.
+\newblock The heavy-hex lattice.
+\newblock \url{https://www.ibm.com/quantum/blog/heavy-hex-lattice}, 2021.
+\newblock Accessed 2026-07-25.
+
+\end{thebibliography}

@@ -1,0 +1,39 @@
+% !TeX program = xelatex
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\setmainfont{NotoSerifSC-Regular.ttf}[Path=../fonts/,BoldFont=NotoSerifSC-Bold.ttf]
+\definecolor{DeepBlue}{HTML}{17365D}
+\definecolor{MainBlue}{HTML}{1D4E89}
+\definecolor{RuleGray}{HTML}{BFC7D1}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  ybar,
+  width=15.2cm,
+  height=7.2cm,
+  ymin=0,
+  ymax=6.7,
+  ylabel={相对 SWAP 改善率（\%）},
+  symbolic x coords={grid,line,random,ring,alternating,far,parallel,phase,uniform},
+  xtick=data,
+  x tick label style={rotate=35,anchor=east,font=\small},
+  ymajorgrids=true,
+  grid style={draw=RuleGray!55},
+  bar width=11pt,
+  nodes near coords,
+  every node near coord/.append style={font=\scriptsize,rotate=90,anchor=west},
+  enlarge x limits=0.06,
+  axis line style={draw=RuleGray},
+  tick style={draw=RuleGray}
+]
+\addplot[fill=MainBlue!75,draw=DeepBlue] coordinates {
+  (grid,1.72) (line,3.86) (random,3.04) (ring,5.86)
+  (alternating,4.19) (far,4.67) (parallel,2.24)
+  (phase,3.09) (uniform,5.69)
+};
+\end{axis}
+\end{tikzpicture}
+\end{document}

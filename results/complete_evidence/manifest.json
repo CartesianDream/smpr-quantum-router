@@ -1,0 +1,123 @@
+{
+  "stage": 60,
+  "purpose": "final frozen evidence and paper tables",
+  "passed": true,
+  "inputs": {
+    "C:\\Users\\carte\\quantum-router\\results\\stage53_cross_layout_hybrid_full_width_fix\\cases.csv": "0c4e73a0d87d204b6eeaf7bf302f9ce91dfb06622c6b5eeb323498b9e1643e09",
+    "C:\\Users\\carte\\quantum-router\\results\\stage57_parallel_v5\\summary.json": "18b0a4c157d9b268f193fda701c8b8dfdd797f02b87d53dbbae788b0971be206",
+    "C:\\Users\\carte\\quantum-router\\results\\stage58_persistent_v5\\summary.json": "fbb6e206901f3327a243d3c48c57c9b54aae87e198a589d1792dc8019fbd0f0a",
+    "C:\\Users\\carte\\quantum-router\\results\\stage55_v6_blind\\cases.csv": "9e3711648f2e51808e7d6793ae415ad10a4cd11435767ddc4a36dd3fa774049c",
+    "C:\\Users\\carte\\quantum-router\\results\\stage56_v6_analysis\\summary.json": "c41f6fa603dcf64d43a6657f6a5989dc975a7c9d17dc6ad6212a67b98b4bca12",
+    "C:\\Users\\carte\\quantum-router\\results\\stage59_v6_final_audit\\summary.json": "482de1aa2188d30c0d32d646e347c363c8b5b39d20583946e93d5eca43348ab2",
+    "C:\\Users\\carte\\quantum-router\\results\\stage56_v6_analysis\\groups.csv": "7078c9ab82f969124a93a6be618ba780a2f8c4051e4537ea1eba158842338bf1"
+  },
+  "outputs": {
+    "C:\\Users\\carte\\quantum-router\\results\\stage60_final_evidence\\quality_summary.csv": "f2f02744c6b4f80527d6fb1a599262793c874d67dab0a1756e32c12b61518fa0",
+    "C:\\Users\\carte\\quantum-router\\results\\stage60_final_evidence\\runtime_summary.csv": "2b1d5b963660e9d42249b86d68ec95798e04a346a7994955b5ac9fe1a4466ac6",
+    "C:\\Users\\carte\\quantum-router\\results\\stage60_final_evidence\\v6_group_summary.csv": "7078c9ab82f969124a93a6be618ba780a2f8c4051e4537ea1eba158842338bf1",
+    "C:\\Users\\carte\\quantum-router\\results\\stage60_final_evidence\\paper_tables.tex": "5c211b476dc0b2010b1370860dd9bfccf6831cf849b0dd91e8eb69531dbefbf0",
+    "C:\\Users\\carte\\quantum-router\\results\\stage60_final_evidence\\FINAL_EVIDENCE_REPORT.md": "7ee953ef68f0df8a70949b0731d7592d26c61f153be51cb5ab35f4a68b67be05"
+  },
+  "quality": [
+    {
+      "dataset": "V5 engineering check",
+      "cases": 60,
+      "lightsabre_swap": 1691,
+      "native_oaabr_swap": 1843,
+      "safe_dual_swap": 1670,
+      "selected_swap": 1641,
+      "gain_vs_lightsabre": 50,
+      "relative_gain_pct": 2.9568302779420463,
+      "native_oaabr_gap_vs_lightsabre": 152,
+      "swap_wins": 20,
+      "swap_ties": 40,
+      "swap_losses": 0,
+      "quality_wins": 25,
+      "quality_ties": 35,
+      "quality_losses": 0,
+      "semantic_passed": 60,
+      "topology_passed": 60,
+      "metric_passed": 60,
+      "selected_backends": {
+        "lightsabre": 35,
+        "hybrid": 23,
+        "oaabr": 2
+      }
+    },
+    {
+      "dataset": "V6 preregistered blind",
+      "cases": 120,
+      "lightsabre_swap": 3176,
+      "native_oaabr_swap": 3386,
+      "safe_dual_swap": 3119,
+      "selected_swap": 3051,
+      "gain_vs_lightsabre": 125,
+      "relative_gain_pct": 3.9357682619647356,
+      "native_oaabr_gap_vs_lightsabre": 210,
+      "swap_wins": 50,
+      "swap_ties": 70,
+      "swap_losses": 0,
+      "quality_wins": 58,
+      "quality_ties": 62,
+      "quality_losses": 0,
+      "semantic_passed": 120,
+      "topology_passed": 120,
+      "metric_passed": 120,
+      "selected_backends": {
+        "hybrid": 51,
+        "lightsabre": 62,
+        "oaabr": 7
+      }
+    }
+  ],
+  "runtime": [
+    {
+      "dataset": "V5",
+      "baseline": "Stage 57 per-case processes",
+      "baseline_seconds": 212.56941330002155,
+      "persistent_seconds": 78.97458059992641,
+      "speedup": 2.6916181344079164,
+      "wall_reduction_pct": 62.84762733551826,
+      "persistent_processes": 4,
+      "avoided_process_restarts": 56
+    },
+    {
+      "dataset": "V6",
+      "baseline": "Stage 55 sequential",
+      "baseline_seconds": 583.84,
+      "persistent_seconds": 200.2067116999533,
+      "speedup": 2.9161859512232136,
+      "wall_reduction_pct": 65.70863392368572,
+      "persistent_processes": 4,
+      "avoided_process_restarts": 116
+    }
+  ],
+  "v6_inference": {
+    "mean_normalized_gap": -0.018726851851851852,
+    "bootstrap": {
+      "samples": 10000,
+      "seed": 20260723,
+      "ci95": [
+        -0.024346064814814817,
+        -0.01363425925925926
+      ]
+    },
+    "swap_win_tie_loss": {
+      "win": 50,
+      "tie": 70,
+      "loss": 0
+    },
+    "quality_win_tie_loss": {
+      "win": 58,
+      "tie": 62,
+      "loss": 0
+    }
+  },
+  "stage59_mismatches": {
+    "total": 1,
+    "primary": 0,
+    "auxiliary": 1,
+    "isolated_confirmed": 1,
+    "unconfirmed_auxiliary": 0
+  }
+}

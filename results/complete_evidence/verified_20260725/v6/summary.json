@@ -1,0 +1,90 @@
+{
+  "stage": 58,
+  "purpose": "exact persistent-shard execution of frozen Stage 53",
+  "input": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\data\\benchmarks_v6\\blind_test.json",
+  "input_sha256": "49d7f9a63faea0ed3dbbf27d749744822123fc006fc9b0a5b95ae57ead71367b",
+  "stage53_script": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\experiments\\stage53_cross_layout_safe_hybrid.py",
+  "stage53_sha256": "72eb748fa25700ce7320fb8ca170dee85800dab3279b64c59d950229e601bb1e",
+  "case_count": 120,
+  "workers": 4,
+  "persistent_processes": 4,
+  "avoided_process_restarts": 116,
+  "schedule": "lpt",
+  "selection_mode": "legacy",
+  "timing_reference": null,
+  "measured_timing_count": 0,
+  "frozen_parameters": {
+    "qiskit_seeds": 20,
+    "qiskit_repeats": 1,
+    "hybrid_layouts": 0,
+    "hybrid_neighbors": 4,
+    "proxy_decay": 0.95
+  },
+  "totals": {
+    "lightsabre_swap": 3176,
+    "oaabr_swap": 3386,
+    "safe_dual_swap": 3119,
+    "selected_swap": 3051,
+    "gain_vs_lightsabre": 125,
+    "gain_vs_safe_dual": 68
+  },
+  "selected_backends": {
+    "hybrid": 51,
+    "lightsabre": 62,
+    "oaabr": 7
+  },
+  "semantic_passed": 120,
+  "topology_passed": 120,
+  "metric_passed": 120,
+  "safe_quality_floor": true,
+  "quality_reference": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\evidence\\reference\\v6_cases.csv",
+  "quality_policy": "primary",
+  "quality_mismatches": 0,
+  "parallel_wall_seconds": 197.1876740999287,
+  "summed_shard_seconds": 657.8729863999179,
+  "effective_parallelism": 3.336278443380431,
+  "resumed_shards": 0,
+  "attempt_count": 4602,
+  "shards": [
+    {
+      "shard_id": 0,
+      "case_count": 30,
+      "case_indices": "0,1,2,3,4,5,6,7,8,30,31,32,33,34,35,60,61,62,63,64,65,66,67,68,90,91,92,93,94,95",
+      "predicted_seconds": "119304.000000",
+      "actual_seconds": "134.328076",
+      "resumed": false,
+      "output_dir": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\shards\\shard_00",
+      "log_path": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\worker_logs\\shard_00.txt"
+    },
+    {
+      "shard_id": 1,
+      "case_count": 30,
+      "case_indices": "9,10,11,12,13,14,21,22,23,39,40,41,42,43,44,69,70,71,72,73,74,81,82,83,99,100,101,102,103,104",
+      "predicted_seconds": "119304.000000",
+      "actual_seconds": "197.181971",
+      "resumed": false,
+      "output_dir": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\shards\\shard_01",
+      "log_path": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\worker_logs\\shard_01.txt"
+    },
+    {
+      "shard_id": 2,
+      "case_count": 30,
+      "case_indices": "15,16,17,18,19,20,36,37,38,45,46,47,48,49,50,75,76,77,78,79,80,96,97,98,105,106,107,108,109,110",
+      "predicted_seconds": "119304.000000",
+      "actual_seconds": "129.693269",
+      "resumed": false,
+      "output_dir": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\shards\\shard_02",
+      "log_path": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\worker_logs\\shard_02.txt"
+    },
+    {
+      "shard_id": 3,
+      "case_count": 30,
+      "case_indices": "24,25,26,27,28,29,51,52,53,54,55,56,57,58,59,84,85,86,87,88,89,111,112,113,114,115,116,117,118,119",
+      "predicted_seconds": "119304.000000",
+      "actual_seconds": "196.669671",
+      "resumed": false,
+      "output_dir": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\shards\\shard_03",
+      "log_path": "C:\\Users\\carte\\smpr-stage63\\source\\SMPR_quantum_router_stage63\\results\\stage63_v6_full_20260725\\worker_logs\\shard_03.txt"
+    }
+  ]
+}

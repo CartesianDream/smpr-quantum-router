@@ -1,0 +1,16 @@
+SMPR PUBLIC RELEASE LICENSE — REVIEW REQUIRED
+
+Copyright (c) 2026 SMPR authors. All rights reserved.
+
+This release candidate is supplied for private review and reproducibility
+testing only. No permission is granted to redistribute, sublicense, publish,
+or create derivative works until the copyright holder replaces this file with
+an approved public license.
+
+This conservative placeholder prevents an automated packaging process from
+making a legal choice on behalf of the copyright holder. Before public release,
+the copyright holder must choose a license, insert the correct copyright name,
+and update pyproject.toml, CITATION.cff, NOTICE.md, and RELEASE_CHECKLIST.md.
+
+Third-party benchmark inputs retain their own licenses; see NOTICE.md.
+

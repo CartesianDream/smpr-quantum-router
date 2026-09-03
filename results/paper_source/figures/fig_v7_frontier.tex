@@ -1,0 +1,32 @@
+% !TeX program = xelatex
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\setmainfont{NotoSerifSC-Regular.ttf}[Path=../fonts/,BoldFont=NotoSerifSC-Bold.ttf]
+\definecolor{MainBlue}{HTML}{1D4E89}
+\definecolor{WarnRed}{HTML}{A33A3A}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  width=13.0cm,
+  height=6.2cm,
+  xlabel={LightSABRE 时间预算 / $T_{\mathrm{SMPR}}$},
+  ylabel={三次重复总 SWAP},
+  xmin=0.2,xmax=2.05,
+  ymin=960,ymax=1140,
+  xtick={0.25,0.5,1,2},
+  grid=major,
+  legend style={at={(0.98,0.98)},anchor=north east},
+  tick label style={font=\small}
+]
+\addplot[MainBlue,very thick,mark=*] coordinates
+  {(0.25,990) (0.5,990) (1,990) (2,990)};
+\addlegendentry{SMPR}
+\addplot[WarnRed,very thick,mark=square*] coordinates
+  {(0.25,1113) (0.5,1086) (1,1068) (2,1044)};
+\addlegendentry{time-matched LightSABRE}
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "protocol": "SMPR V7 external validation",
+  "status": "prospective; freeze before inspecting routing results",
+  "source": {
+    "name": "QASMBench",
+    "repository": "https://github.com/pnnl/QASMBench",
+    "commit": "357b942396d5c2b7cbc1c229c585a6ef5ccaebac",
+    "license": "BSD",
+    "citation_doi": "10.1145/3550488"
+  },
+  "normalization": {
+    "input": "OpenQASM 2",
+    "remove": [
+      "final measurements",
+      "barriers"
+    ],
+    "reject": [
+      "mid-circuit measurement",
+      "reset",
+      "control flow"
+    ],
+    "qiskit_basis": [
+      "u",
+      "cx"
+    ],
+    "routing_skeleton": "preserve qubit dependencies and every CX; replace each one-qubit operation by an H placeholder because one-qubit parameters do not affect routing",
+    "optimization_level": 0,
+    "seed_transpiler": 0
+  },
+  "topology_rule": {
+    "11_to_19_logical_qubits": "Qiskit bidirectional heavy-hex distance 3 (19 physical qubits)",
+    "20_to_23_logical_qubits": "Qiskit bidirectional heavy-hex distance 5 (57 physical qubits)"
+  },
+  "portfolio": {
+    "selection_mode": "deterministic",
+    "lightsabre_seeds": 20,
+    "lightsabre_repeats": 1,
+    "cross_layout_bases": 0,
+    "neighbors_per_base": 4,
+    "proxy_decay": 0.95
+  },
+  "matched_runtime": {
+    "machine": "the same physical machine, Python environment, process policy, and thread limits",
+    "repeats": 3,
+    "warmup": "one excluded LightSABRE compilation per case and repeat",
+    "smpr_timer": "candidate generation and deterministic selection only; artifact export and statistical analysis excluded",
+    "lightsabre_timer": "sequential deterministic seed stream beginning at zero",
+    "budget_multipliers": [
+      0.25,
+      0.5,
+      1.0,
+      2.0
+    ],
+    "minimum_lightsabre_trials": 20,
+    "maximum_lightsabre_trials": 10000
+  },
+  "acceptance": {
+    "source_hashes": "all exact",
+    "prepared_cases": 10,
+    "all_logical_qubits_greater_than": 10,
+    "all_topologies": "heavy_hex",
+    "routing_trace_and_topology_audits": "all pass",
+    "smpr_per_case_swap_regressions_vs_internal_20_seed_lightsabre": 0,
+    "report_failures": true,
+    "no_parameter_changes_after_freeze": true
+  },
+  "circuits": [
+    {
+      "id": "sat_n11",
+      "qubits": 11,
+      "path": "medium/sat_n11/sat_n11.qasm",
+      "sha256": "a876bce6261e0c6b2eff07cca8606a6937fe37ba46d8b1c28cc735d9c8fa325e"
+    },
+    {
+      "id": "multiply_n13",
+      "qubits": 13,
+      "path": "medium/multiply_n13/multiply_n13.qasm",
+      "sha256": "6d00a50a97f2224ddbb993ed3d82b1928cc1397997fc0347296d7fc42d731755"
+    },
+    {
+      "id": "bv_n14",
+      "qubits": 14,
+      "path": "medium/bv_n14/bv_n14.qasm",
+      "sha256": "c98cf8b70ed55423525f55bebe8293fd69a97a33472d83cbf5d39693b6ed5e14"
+    },
+    {
+      "id": "multiplier_n15",
+      "qubits": 15,
+      "path": "medium/multiplier_n15/multiplier_n15.qasm",
+      "sha256": "e8ad585e5be09f96dd60f7495bd649562c6c05f8bf5d8a416b85a9d834e7eab8"
+    },
+    {
+      "id": "dnn_n16",
+      "qubits": 16,
+      "path": "medium/dnn_n16/dnn_n16.qasm",
+      "sha256": "c194be8740c380fc9679ebcca2515ac52215aea1c58dc5cfc507679a88c64d79"
+    },
+    {
+      "id": "bigadder_n18",
+      "qubits": 18,
+      "path": "medium/bigadder_n18/bigadder_n18.qasm",
+      "sha256": "097ac44672d0bb9696cd77e561bc094a661f45fa84762373df840efddac4d094"
+    },
+    {
+      "id": "bv_n19",
+      "qubits": 19,
+      "path": "medium/bv_n19/bv_n19.qasm",
+      "sha256": "e80db1204270dc9fdf894c8acc682c2a2883c653185c61dcdc77a99ce5b6723a"
+    },
+    {
+      "id": "qram_n20",
+      "qubits": 20,
+      "path": "medium/qram_n20/qram_n20.qasm",
+      "sha256": "2b22f2a0a013cb91c5b59063b04e33998a1e24bbd5300a085b01edadd9ac763d"
+    },
+    {
+      "id": "cat_state_n22",
+      "qubits": 22,
+      "path": "medium/cat_state_n22/cat_state_n22.qasm",
+      "sha256": "a7b6a6a5c83397281250f255ce303f34e90c65d3990ef5b3ecc96fc685083c1e"
+    },
+    {
+      "id": "ghz_state_n23",
+      "qubits": 23,
+      "path": "medium/ghz_state_n23/ghz_state_n23.qasm",
+      "sha256": "27e77c753e2993b3b4785872ec83d434dfac62cc526f4ee574347e6f5c8986ff"
+    }
+  ]
+}

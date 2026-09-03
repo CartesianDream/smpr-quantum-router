@@ -1,0 +1,13 @@
+﻿antlr4-python3-runtime==4.13.2
+dill==0.4.1
+numpy==2.2.6
+openqasm3==1.0.1
+qiskit==2.4.2
+qiskit-qasm3-import==0.6.0
+rustworkx==0.18.0
+scipy==1.15.3
+# Editable install with no version control (smpr-quantum-router==0.3.0)
+-e c:\users\carte\smpr-stage63\source\smpr_quantum_router_stage63
+stevedore==5.8.0
+tomli==2.2.1
+typing_extensions==4.16.0

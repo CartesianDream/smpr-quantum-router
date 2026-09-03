@@ -1,0 +1,3 @@
+﻿dataset,cases,lightsabre_swap,native_oaabr_swap,safe_dual_swap,selected_swap,gain_vs_lightsabre,relative_gain_pct,native_oaabr_gap_vs_lightsabre,swap_wins,swap_ties,swap_losses,quality_wins,quality_ties,quality_losses,semantic_passed,topology_passed,metric_passed,selected_backends
+V5 engineering check,60,1691,1843,1670,1641,50,2.9568302779420463,152,20,40,0,25,35,0,60,60,60,"{'lightsabre': 35, 'hybrid': 23, 'oaabr': 2}"
+V6 preregistered blind,120,3176,3386,3119,3051,125,3.9357682619647356,210,50,70,0,58,62,0,120,120,120,"{'hybrid': 51, 'lightsabre': 62, 'oaabr': 7}"

@@ -1,0 +1,8 @@
+# Portable XeLaTeX defaults for local latexmk and cloud services that honor
+# a project-level latexmkrc. main.tex remains the primary document.
+$pdf_mode = 5;
+$xelatex = 'xelatex -no-pdf -file-line-error -interaction=nonstopmode -halt-on-error %O %S';
+$xdvipdfmx = 'xdvipdfmx -E -o %D %O %S';
+$bibtex_use = 2;
+$max_repeat = 5;
+

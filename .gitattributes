@@ -1,0 +1,15 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.tex text eol=lf
+*.ps1 text eol=crlf
+*.pdf binary
+*.zip binary
+*.xlsx binary
+*.qpy binary
+*.ttf binary
+*.otf binary
+

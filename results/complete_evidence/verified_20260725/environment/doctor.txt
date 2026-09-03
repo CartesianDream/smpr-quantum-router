@@ -1,0 +1,6 @@
+﻿repository: C:\Users\carte\smpr-stage63\source\SMPR_quantum_router_stage63
+[PASS] stage imports: all upstream stage modules are present
+[PASS] frozen_v5.toml: V5 input hash verified
+[PASS] frozen_v6.toml: V6 input hash verified
+[PASS] qiskit: installed=2.4.2, expected=2.4.2
+[PASS] credential files: no local credential files detected

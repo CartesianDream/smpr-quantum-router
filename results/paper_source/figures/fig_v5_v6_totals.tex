@@ -1,0 +1,31 @@
+% !TeX program = xelatex
+\documentclass[tikz,border=2pt]{standalone}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\setmainfont{NotoSerifSC-Regular.ttf}[Path=../fonts/,BoldFont=NotoSerifSC-Bold.ttf]
+\definecolor{MainBlue}{HTML}{1D4E89}
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+  ybar,
+  width=14.0cm,
+  height=6.0cm,
+  ylabel={总 SWAP},
+  symbolic x coords={V5,V6},
+  xtick=data,
+  ymin=0,
+  enlarge x limits=0.28,
+  bar width=18pt,
+  nodes near coords,
+  legend style={at={(0.5,-0.20)},anchor=north,legend columns=-1},
+  grid=major,
+  grid style={draw=gray!15}
+]
+\addplot[fill=gray!55,draw=gray!75] coordinates {(V5,1691) (V6,3176)};
+\addplot[fill=MainBlue!75,draw=MainBlue] coordinates {(V5,1641) (V6,3051)};
+\legend{LightSABRE,SMPR}
+\end{axis}
+\end{tikzpicture}
+\end{document}

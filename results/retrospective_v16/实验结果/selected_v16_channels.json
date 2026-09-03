@@ -1,0 +1,58 @@
+{
+  "channels": [
+    {
+      "id": 7,
+      "name": "p007",
+      "potential_mode": "ordered_sq",
+      "candidate_mode": "multigeodesic",
+      "search_mode": "terminal_two_step",
+      "beta_unlock": 1.0,
+      "undo_weight": 0.0,
+      "globals": {
+        "theta": 5,
+        "w_future": 0.5,
+        "gamma": 0.5,
+        "alpha": 0.5,
+        "ordered_decay": 0.3
+      },
+      "beam_width_1": 2,
+      "beam_width_2": 2
+    },
+    {
+      "id": 17,
+      "name": "p017",
+      "potential_mode": "ordered_lin",
+      "candidate_mode": "ordered_frontier",
+      "search_mode": "terminal_two_step",
+      "beta_unlock": 0.25,
+      "undo_weight": 0.0,
+      "globals": {
+        "theta": 5,
+        "w_future": 0.5,
+        "gamma": 0.5,
+        "alpha": 0.5,
+        "ordered_decay": 0.5
+      },
+      "beam_width_1": 3,
+      "beam_width_2": 2
+    },
+    {
+      "id": 35,
+      "name": "p035",
+      "potential_mode": "ordered_sq",
+      "candidate_mode": "ordered_frontier",
+      "search_mode": "terminal_two_step",
+      "beta_unlock": 1.0,
+      "undo_weight": 0.0,
+      "globals": {
+        "theta": 5,
+        "w_future": 0.5,
+        "gamma": 0.5,
+        "alpha": 0.5,
+        "ordered_decay": 0.7
+      },
+      "beam_width_1": 4,
+      "beam_width_2": 3
+    }
+  ]
+}
